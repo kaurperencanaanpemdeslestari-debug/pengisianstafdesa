@@ -3,30 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pengisian Staf Desa Lestari 2026</title>
-<meta name="description" content="Pengumuman resmi pengisian Staf Desa Lestari, Kecamatan Patianrowo, Kabupaten Nganjuk. Pendaftaran ditutup 17 Juli 2026.">
+<title>Pengumuman Resmi Panitia Seleksi Calon Staf Desa Lestari</title>
+<meta name="description" content="Pengumuman resmi Seleksi Calon Staf Desa Lestari, Kecamatan Patianrowo, Kabupaten Nganjuk. Pendaftaran ditutup 17 Juli 2026.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --green-900:#123322;
+    --green-900:#16281B;
     --green-700:#1E5138;
     --green-500:#2F7A54;
-    --teal:#6FE3C1;
-    --coral:#FF8A5B;
-    --amber:#FFC876;
+    --teal:#2F7A54;
+    --coral:#6B7A94;
+    --amber:#D9A54B;
 
-    --bg-deep:#0A1712;
+    --bg-deep:#F3F1EC;
 
-    --glass:rgba(255,255,255,0.07);
-    --glass-strong:rgba(255,255,255,0.13);
-    --glass-border:rgba(255,255,255,0.16);
-    --glass-border-strong:rgba(255,255,255,0.30);
+    --glass:rgba(255,255,255,0.55);
+    --glass-strong:rgba(255,255,255,0.82);
+    --glass-border:rgba(22,26,20,0.09);
+    --glass-border-strong:rgba(22,26,20,0.18);
 
-    --ink:#F4F8EF;
-    --ink-soft:rgba(244,248,239,0.72);
-    --ink-mute:rgba(244,248,239,0.5);
+    --ink:#1B1F19;
+    --ink-soft:rgba(27,31,25,0.68);
+    --ink-mute:rgba(27,31,25,0.48);
 
     --font-display:'Fraunces', serif;
     --font-body:'Plus Jakarta Sans', sans-serif;
@@ -48,24 +48,24 @@
 
   /* ---------- animated glass background ---------- */
   .bg-blobs{position:fixed; inset:0; z-index:-1; overflow:hidden; background:
-    radial-gradient(circle at 20% 0%, #0F2A1D 0%, var(--bg-deep) 55%);
+    linear-gradient(160deg, #838DA0 0%, #ADB4C1 22%, #DEE0E4 48%, #F7F6F3 72%, #FFFFFF 100%);
   }
-  .blob{position:absolute; border-radius:50%; filter:blur(90px); opacity:.5; will-change:transform;}
-  .blob-1{width:480px; height:480px; background:var(--green-500); top:-140px; left:-120px; animation:float1 26s ease-in-out infinite alternate;}
-  .blob-2{width:420px; height:420px; background:var(--coral); bottom:-120px; right:-100px; animation:float2 30s ease-in-out infinite alternate;}
-  .blob-3{width:360px; height:360px; background:var(--teal); top:38%; left:58%; animation:float3 22s ease-in-out infinite alternate;}
+  .blob{position:absolute; border-radius:50%; filter:blur(100px); opacity:.4; will-change:transform;}
+  .blob-1{width:480px; height:480px; background:#BFE0CC; top:-140px; left:-120px; animation:float1 26s ease-in-out infinite alternate;}
+  .blob-2{width:420px; height:420px; background:#E8D3A3; bottom:-120px; right:-100px; animation:float2 30s ease-in-out infinite alternate;}
+  .blob-3{width:360px; height:360px; background:#C7D2E0; top:38%; left:58%; animation:float3 22s ease-in-out infinite alternate;}
   @keyframes float1{ from{transform:translate(0,0) scale(1);} to{transform:translate(70px,50px) scale(1.12);} }
   @keyframes float2{ from{transform:translate(0,0) scale(1);} to{transform:translate(-60px,-40px) scale(1.08);} }
   @keyframes float3{ from{transform:translate(0,0) scale(1);} to{transform:translate(-50px,60px) scale(0.94);} }
 
-  .grain{position:fixed; inset:0; z-index:-1; opacity:.035; pointer-events:none;
+  .grain{position:fixed; inset:0; z-index:-1; opacity:.02; pointer-events:none;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
 
   /* ---------- topbar ---------- */
   .topbar{
     position:sticky; top:0; z-index:40;
-    background:rgba(10,23,18,0.55);
+    background:rgba(255,255,255,0.6);
     backdrop-filter:blur(16px) saturate(160%);
     -webkit-backdrop-filter:blur(16px) saturate(160%);
     border-bottom:1px solid var(--glass-border);
@@ -91,7 +91,7 @@
   .hero h1{
     font-family:var(--font-display); font-weight:600;
     font-size:clamp(32px, 7vw, 44px); line-height:1.1;
-    margin:0 0 14px; color:#fff;
+    margin:0 0 14px; color:var(--green-900);
   }
   .hero p.lede{font-size:15.5px; color:var(--ink-soft); max-width:44ch; margin:0 0 24px;}
 
@@ -101,17 +101,17 @@
     backdrop-filter:blur(18px) saturate(160%); -webkit-backdrop-filter:blur(18px) saturate(160%);
     border:1px solid var(--glass-border-strong);
     border-radius:16px; padding:13px 18px;
-    box-shadow:0 12px 30px -14px rgba(0,0,0,0.5);
+    box-shadow:0 14px 34px -20px rgba(20,25,20,0.35);
   }
-  .deadline-badge .dot{width:8px; height:8px; border-radius:50%; background:var(--coral); flex-shrink:0; box-shadow:0 0 0 0 rgba(255,138,91,0.6); animation:pulse 2s ease-in-out infinite;}
+  .deadline-badge .dot{width:8px; height:8px; border-radius:50%; background:var(--amber); flex-shrink:0; box-shadow:0 0 0 0 rgba(217,165,75,0.6); animation:pulse 2s ease-in-out infinite;}
   @keyframes pulse{
-    0%{box-shadow:0 0 0 0 rgba(255,138,91,0.55);}
-    70%{box-shadow:0 0 0 9px rgba(255,138,91,0);}
-    100%{box-shadow:0 0 0 0 rgba(255,138,91,0);}
+    0%{box-shadow:0 0 0 0 rgba(217,165,75,0.55);}
+    70%{box-shadow:0 0 0 9px rgba(217,165,75,0);}
+    100%{box-shadow:0 0 0 0 rgba(217,165,75,0);}
   }
   .deadline-badge .label{font-size:11.5px; color:var(--ink-mute); text-transform:uppercase; letter-spacing:.04em;}
-  .deadline-badge .date{font-size:15px; font-weight:600; color:#fff;}
-  .deadline-badge .countdown{font-size:11.5px; color:var(--amber); font-weight:600; margin-top:2px;}
+  .deadline-badge .date{font-size:15px; font-weight:600; color:var(--ink);}
+  .deadline-badge .countdown{font-size:11.5px; color:#B27A1E; font-weight:600; margin-top:2px;}
 
   /* ---------- glass primitive ---------- */
   .glass{
@@ -120,10 +120,10 @@
     -webkit-backdrop-filter:blur(18px) saturate(160%);
     border:1px solid var(--glass-border);
     border-radius:18px;
-    box-shadow:0 14px 40px -22px rgba(0,0,0,0.55);
+    box-shadow:0 16px 40px -24px rgba(20,25,20,0.28);
     transition:transform .35s ease, border-color .35s ease, box-shadow .35s ease, background .35s ease;
   }
-  .glass:hover{transform:translateY(-3px); border-color:var(--glass-border-strong); background:var(--glass-strong);}
+  .glass:hover{transform:translateY(-3px); border-color:var(--glass-border-strong); background:var(--glass-strong); box-shadow:0 20px 46px -22px rgba(20,25,20,0.32);}
 
   /* ---------- quick facts ---------- */
   .facts{margin-top:-24px; position:relative; z-index:2;}
@@ -131,13 +131,13 @@
   .facts .item{padding:18px 10px; text-align:center; border-right:1px solid var(--glass-border);}
   .facts .item:last-child{border-right:none;}
   .facts .item .k{font-size:10.5px; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-mute); margin-bottom:5px;}
-  .facts .item .v{font-size:14.5px; font-weight:600; color:#fff; font-family:var(--font-display);}
+  .facts .item .v{font-size:14.5px; font-weight:600; color:var(--green-900); font-family:var(--font-display);}
 
   /* ---------- sections ---------- */
   section.block{padding:46px 0 6px;}
   .section-head{margin-bottom:20px;}
-  .section-num{font-size:11.5px; font-weight:700; color:var(--coral); letter-spacing:.1em; text-transform:uppercase; margin:0 0 6px;}
-  .section-head h2{font-family:var(--font-display); font-weight:600; font-size:23px; color:#fff; margin:0;}
+  .section-num{font-size:11.5px; font-weight:700; color:var(--amber); letter-spacing:.1em; text-transform:uppercase; margin:0 0 6px;}
+  .section-head h2{font-family:var(--font-display); font-weight:600; font-size:23px; color:var(--green-900); margin:0;}
   .section-sub{font-size:13.5px; color:var(--ink-soft); margin:6px 0 0;}
 
   .reveal{opacity:0; transform:translateY(16px); transition:opacity .7s ease, transform .7s ease;}
@@ -146,48 +146,50 @@
   /* requirement groups */
   .req-grid{display:grid; gap:12px;}
   .req-card{padding:17px 19px;}
-  .req-card h3{font-size:14px; margin:0 0 10px; color:#fff; display:flex; align-items:center; gap:9px; font-weight:600;}
+  .req-card h3{font-size:14px; margin:0 0 10px; color:var(--green-900); display:flex; align-items:center; gap:9px; font-weight:600;}
   .req-card h3 .ico{
     width:24px; height:24px; border-radius:8px; flex-shrink:0;
-    background:rgba(111,227,193,0.16); color:var(--teal);
+    background:rgba(47,122,84,0.14); color:var(--teal);
     display:flex; align-items:center; justify-content:center;
   }
   .req-card ul{margin:0; padding:0; list-style:none;}
   .req-card li{font-size:13.5px; color:var(--ink-soft); padding:7px 0 7px 20px; position:relative; border-top:1px solid var(--glass-border);}
   .req-card li:first-child{border-top:none;}
-  .req-card li::before{content:""; position:absolute; left:2px; top:14px; width:6px; height:6px; border-radius:50%; background:var(--coral);}
+  .req-card li::before{content:""; position:absolute; left:2px; top:14px; width:6px; height:6px; border-radius:50%; background:var(--amber);}
 
   /* dokumen checklist */
   .doc-group{margin-bottom:14px;}
   .doc-group .tag{
     display:inline-flex; align-items:center; gap:6px; font-size:11.5px; font-weight:600; color:var(--teal);
-    background:rgba(111,227,193,0.12); border:1px solid rgba(111,227,193,0.3);
+    background:rgba(47,122,84,0.1); border:1px solid rgba(47,122,84,0.28);
     padding:6px 12px; border-radius:100px; margin-bottom:10px;
   }
-  .doc-group.provided .tag{color:var(--amber); background:rgba(255,200,118,0.12); border-color:rgba(255,200,118,0.32);}
+  .doc-group.provided .tag{color:#B27A1E; background:rgba(217,165,75,0.12); border-color:rgba(217,165,75,0.35);}
+  .doc-group.onsite .tag{color:var(--coral); background:rgba(107,122,148,0.1); border-color:rgba(107,122,148,0.32);}
   .doc-list{padding:0; overflow:hidden;}
   .doc-item{display:flex; align-items:flex-start; gap:11px; padding:12px 17px; font-size:13.5px; color:var(--ink-soft); border-top:1px solid var(--glass-border);}
   .doc-item:first-child{border-top:none;}
-  .doc-item .chk{width:18px; height:18px; border-radius:6px; flex-shrink:0; margin-top:1px; border:1.5px solid var(--teal); background:rgba(111,227,193,0.1);}
-  .doc-group.provided .chk{border-color:var(--amber); background:rgba(255,200,118,0.12);}
+  .doc-item .chk{width:18px; height:18px; border-radius:6px; flex-shrink:0; margin-top:1px; border:1.5px solid var(--teal); background:rgba(47,122,84,0.08);}
+  .doc-group.provided .chk{border-color:var(--amber); background:rgba(217,165,75,0.14);}
+  .doc-group.onsite .chk{border-color:var(--coral); background:rgba(107,122,148,0.12);}
   .note-inline{font-size:12px; color:var(--ink-mute); margin-top:10px; padding-left:2px;}
 
   /* lokasi */
   .loc-card{padding:22px;}
   .loc-row{display:flex; gap:12px; padding:11px 0;}
   .loc-row + .loc-row{border-top:1px solid var(--glass-border);}
-  .loc-row .ico{width:32px; height:32px; border-radius:10px; flex-shrink:0; background:rgba(255,255,255,0.09); border:1px solid var(--glass-border); display:flex; align-items:center; justify-content:center;}
+  .loc-row .ico{width:32px; height:32px; border-radius:10px; flex-shrink:0; background:rgba(47,122,84,0.1); border:1px solid var(--glass-border); display:flex; align-items:center; justify-content:center;}
   .loc-row .txt{font-size:13.5px; color:var(--ink-soft);}
-  .loc-row .txt b{display:block; color:#fff; font-size:11.5px; font-weight:600; margin-bottom:3px; text-transform:uppercase; letter-spacing:.04em;}
+  .loc-row .txt b{display:block; color:var(--green-900); font-size:11.5px; font-weight:600; margin-bottom:3px; text-transform:uppercase; letter-spacing:.04em;}
   .maps-link{
     display:inline-flex; align-items:center; gap:7px; margin-top:16px;
-    font-size:13px; font-weight:600; color:#0A1712;
-    background:linear-gradient(120deg, var(--teal), var(--amber));
+    font-size:13px; font-weight:600; color:#fff;
+    background:linear-gradient(120deg, var(--green-700), var(--teal));
     padding:11px 18px; border-radius:100px; text-decoration:none;
     transition:transform .2s ease, box-shadow .2s ease;
-    box-shadow:0 10px 24px -10px rgba(111,227,193,0.5);
+    box-shadow:0 10px 24px -10px rgba(47,122,84,0.45);
   }
-  .maps-link:hover{transform:translateY(-2px); box-shadow:0 14px 30px -10px rgba(255,200,118,0.55);}
+  .maps-link:hover{transform:translateY(-2px); box-shadow:0 14px 30px -10px rgba(47,122,84,0.55);}
 
   /* jadwal timeline */
   .timeline{position:relative; padding-left:28px;}
@@ -196,51 +198,61 @@
   .t-item:last-child{padding-bottom:0;}
   .t-item::before{
     content:""; position:absolute; left:-28px; top:2px; width:16px; height:16px; border-radius:50%;
-    background:var(--bg-deep); border:3px solid var(--teal); box-shadow:0 0 12px rgba(111,227,193,0.55);
+    background:#fff; border:3px solid var(--teal); box-shadow:0 0 0 3px rgba(47,122,84,0.14);
   }
-  .t-item.final::before{border-color:var(--coral); box-shadow:0 0 14px rgba(255,138,91,0.65);}
-  .t-item .d{font-size:12px; font-weight:700; color:var(--coral); margin-bottom:2px;}
-  .t-item .t{font-size:14px; font-weight:600; color:#fff;}
+  .t-item.final::before{border-color:var(--amber); box-shadow:0 0 0 3px rgba(217,165,75,0.18);}
+  .t-item .d{font-size:12px; font-weight:700; color:#B27A1E; margin-bottom:2px;}
+  .t-item .t{font-size:14px; font-weight:600; color:var(--green-900);}
   .schedule-note{margin-top:18px; padding:15px 17px; font-size:12.5px; color:var(--ink-soft);}
 
   /* penilaian */
   .score-bar{display:flex; height:36px; border-radius:12px; overflow:hidden; margin-bottom:14px; border:1px solid var(--glass-border);}
   .score-bar div{display:flex; align-items:center; justify-content:center; font-size:11.5px; font-weight:700; color:#0A1712;}
-  .score-bar .s1{background:linear-gradient(120deg, var(--teal), #4FCBA6); width:50%;}
-  .score-bar .s2{background:linear-gradient(120deg, var(--amber), #FFB24D); width:30%; color:#3A2604;}
-  .score-bar .s3{background:linear-gradient(120deg, var(--coral), #FF6E3D); width:20%; color:#fff;}
+  .score-bar .s1{background:linear-gradient(120deg, var(--teal), #245F41); width:50%; color:#fff;}
+  .score-bar .s2{background:linear-gradient(120deg, var(--amber), #C08935); width:30%; color:#3A2604;}
+  .score-bar .s3{background:linear-gradient(120deg, var(--coral), #566178); width:20%; color:#fff;}
   .score-legend{display:flex; flex-wrap:wrap; gap:14px; font-size:12.5px; color:var(--ink-soft); margin-bottom:16px;}
   .score-legend span{display:inline-flex; align-items:center; gap:6px;}
   .score-legend i{width:9px; height:9px; border-radius:50%; display:inline-block;}
   .subject-list{display:flex; flex-wrap:wrap; gap:8px;}
   .subject-list span{font-size:12px; background:var(--glass); border:1px solid var(--glass-border); padding:7px 13px; border-radius:100px; color:var(--ink-soft);}
 
+  .app-pill-list{display:flex; flex-wrap:wrap; gap:10px;}
+  .app-pill{display:inline-flex; align-items:center; gap:8px; font-size:12.5px; font-weight:500; background:var(--glass); border:1px solid var(--glass-border); padding:6px 14px 6px 6px; border-radius:100px; color:var(--ink-soft);}
+  .app-pill .app-ico{width:22px; height:22px; border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; color:#fff; flex-shrink:0; font-family:var(--font-body);}
+  .app-pill.word .app-ico{background:#2B579A;}
+  .app-pill.excel .app-ico{background:#217346;}
+
   /* kontak */
   .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:10px;}
   .contact-card{padding:17px; text-decoration:none; color:var(--ink); display:flex; flex-direction:column; gap:9px;}
   .contact-card .wa-ico{width:34px; height:34px; border-radius:10px; background:#25D366; display:flex; align-items:center; justify-content:center; box-shadow:0 8px 18px -8px rgba(37,211,102,0.6);}
-  .contact-card .name{font-size:13.5px; font-weight:600; color:#fff;}
+  .contact-card .name{font-size:13.5px; font-weight:600; color:var(--green-900);}
   .contact-card .num{font-size:12px; color:var(--ink-mute);}
 
-  /* ---------- closing / gratis ---------- */
+  /* ---------- closing / gratis (inverse panel for emphasis) ---------- */
   .free-panel{
     text-align:center; padding:42px 26px; border-radius:24px; position:relative; overflow:hidden;
-    background:linear-gradient(135deg, rgba(111,227,193,0.14), rgba(255,138,91,0.12));
-    backdrop-filter:blur(22px) saturate(170%); -webkit-backdrop-filter:blur(22px) saturate(170%);
-    border:1px solid var(--glass-border-strong);
+    background:linear-gradient(135deg, #16281B, #1E5138 65%, #2F7A54);
+    border:1px solid rgba(255,255,255,0.14);
+    box-shadow:0 22px 50px -22px rgba(20,40,27,0.5);
     animation:glowPulse 5s ease-in-out infinite;
   }
   @keyframes glowPulse{
-    0%,100%{box-shadow:0 0 40px -12px rgba(111,227,193,0.35);}
-    50%{box-shadow:0 0 55px -8px rgba(255,138,91,0.45);}
+    0%,100%{box-shadow:0 22px 50px -22px rgba(20,40,27,0.5), 0 0 0 0 rgba(217,165,75,0);}
+    50%{box-shadow:0 22px 50px -22px rgba(20,40,27,0.5), 0 0 34px 2px rgba(217,165,75,0.25);}
   }
   .free-icon{
     width:60px; height:60px; border-radius:50%; margin:0 auto 18px;
-    background:rgba(255,255,255,0.12); border:1px solid var(--glass-border-strong);
+    background:rgba(255,255,255,0.14); border:1px solid rgba(255,255,255,0.28);
     display:flex; align-items:center; justify-content:center;
   }
+  .free-panel .tag-gratis{
+    display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--amber); margin-bottom:10px;
+  }
   .free-panel h2{font-family:var(--font-display); font-weight:600; font-size:26px; color:#fff; margin:0 0 10px;}
-  .free-panel p{font-size:14.5px; color:var(--ink-soft); max-width:36ch; margin:0 auto;}
+  .free-panel p{font-size:14.5px; color:rgba(255,255,255,0.82); max-width:36ch; margin:0 auto;}
   .free-panel p b{color:#fff;}
 
   /* footer */
@@ -275,7 +287,7 @@
 <div class="topbar">
   <div class="wrap">
     <div class="emblem" aria-hidden="true">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M12 2L4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6l-8-4z" stroke="#F4F8EF" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M12 2L4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6l-8-4z" stroke="#16281B" stroke-width="1.6" stroke-linejoin="round"/></svg>
     </div>
     <div class="topbar-text"><b>Pemerintah Desa Lestari</b> &middot; Kec. Patianrowo, Kab. Nganjuk</div>
   </div>
@@ -284,7 +296,7 @@
 <header class="hero">
   <div class="wrap">
     <p class="eyebrow">Pengumuman resmi panitia seleksi</p>
-    <h1>Pengisian Staf Desa Lestari</h1>
+    <h1>Pengumuman Resmi Panitia Calon Staf Desa Lestari</h1>
     <p class="lede">Pemerintah Desa Lestari membuka kesempatan bagi 1 (satu) putra&ndash;putri terbaik untuk mengisi posisi Staf Desa.</p>
     <div class="deadline-badge">
       <span class="dot" aria-hidden="true"></span>
@@ -326,26 +338,26 @@
         </div>
 
         <div class="req-card glass">
-          <h3><span class="ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 3L2 8l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5" stroke="currentColor" stroke-width="2"/></svg></span>Pendidikan &amp; usia</h3>
+          <h3><span class="ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 3L2 8l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5" stroke="currentColor" stroke-width="2"/></svg></span>Domisili &amp; pendidikan</h3>
           <ul>
-            <li>Berpendidikan paling rendah Sekolah Lanjutan Tingkat Atas (SLTA) atau yang sederajat, dan tidak sedang menempuh pendidikan.</li>
-            <li>Berusia paling rendah 20 (dua puluh) tahun dan paling tinggi 35 (tiga puluh lima) tahun pada saat pendaftaran.</li>
-          </ul>
-        </div>
-
-        <div class="req-card glass">
-          <h3><span class="ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><rect x="4" y="10" width="16" height="10" rx="1.5" stroke="currentColor" stroke-width="2"/><path d="M8 10V7a4 4 0 018 0v3" stroke="currentColor" stroke-width="2"/></svg></span>Status hukum &amp; jabatan</h3>
-          <ul>
-            <li>Tidak sedang menjalani hukuman pidana atau tidak sedang dalam proses peradilan.</li>
-            <li>Tidak berkedudukan sebagai perangkat desa lain, PNS, TNI, Polri, atau jabatan lain yang dilarang oleh peraturan perundang-undangan.</li>
-          </ul>
-        </div>
-
-        <div class="req-card glass">
-          <h3><span class="ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.6-7-10.5A5.5 5.5 0 0112 5a5.5 5.5 0 017 5.5C19 16.4 12 21 12 21z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>Kesehatan &amp; domisili</h3>
-          <ul>
-            <li>Sehat jasmani dan rohani.</li>
             <li>Bertempat tinggal di Desa Lestari paling kurang 1 (satu) tahun sebelum pendaftaran, dibuktikan dengan Kartu Tanda Penduduk (KTP) dan Kartu Keluarga (KK).</li>
+            <li>Berpendidikan paling rendah Sekolah Lanjutan Tingkat Atas (SLTA) atau yang sederajat.</li>
+          </ul>
+        </div>
+
+        <div class="req-card glass">
+          <h3><span class="ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><rect x="4" y="10" width="16" height="10" rx="1.5" stroke="currentColor" stroke-width="2"/><path d="M8 10V7a4 4 0 018 0v3" stroke="currentColor" stroke-width="2"/></svg></span>Usia &amp; rekam jejak</h3>
+          <ul>
+            <li>Berusia paling rendah 20 (dua puluh) tahun dan paling tinggi 35 (tiga puluh lima) tahun pada saat pendaftaran.</li>
+            <li>Berkelakuan baik yang dibuktikan dengan Surat Keterangan Catatan Kepolisian (SKCK) yang masih berlaku.</li>
+          </ul>
+        </div>
+
+        <div class="req-card glass">
+          <h3><span class="ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.6-7-10.5A5.5 5.5 0 0112 5a5.5 5.5 0 017 5.5C19 16.4 12 21 12 21z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>Kesehatan &amp; status jabatan</h3>
+          <ul>
+            <li>Sehat jasmani dan rohani dibuktikan dengan Surat Keterangan Sehat.</li>
+            <li>Tidak berkedudukan sebagai perangkat desa lain, PNS, TNI, Polri, atau jabatan lain yang dilarang oleh peraturan perundang-undangan.</li>
           </ul>
         </div>
       </div>
@@ -357,7 +369,7 @@
     <div class="wrap">
       <div class="section-head reveal">
         <p class="section-num">Berkas</p>
-        <h2>Berkas yang harus disiapkan</h2>
+        <h2>Persyaratan administrasi (berkas lamaran)</h2>
       </div>
 
       <div class="reveal">
@@ -367,17 +379,25 @@
             <div class="doc-item"><span class="chk"></span>Surat permohonan yang ditulis tangan dan ditujukan kepada Kepala Desa Lestari melalui Panitia Seleksi.</div>
             <div class="doc-item"><span class="chk"></span>Fotokopi Kartu Tanda Penduduk (KTP).</div>
             <div class="doc-item"><span class="chk"></span>Fotokopi Kartu Keluarga (KK).</div>
-            <div class="doc-item"><span class="chk"></span>Fotokopi ijazah pendidikan terakhir yang dilegalisir oleh pejabat yang berwenang.</div>
-            <div class="doc-item"><span class="chk"></span>Pas foto berwarna terbaru, background merah/biru, ukuran 4x6 cm sebanyak 3 (tiga) lembar.</div>
-            <div class="doc-item"><span class="chk"></span>Materai cukup, untuk melengkapi 2 surat pernyataan di bawah.</div>
+            <div class="doc-item"><span class="chk"></span>Surat Keterangan Catatan Kepolisian (SKCK).</div>
+            <div class="doc-item"><span class="chk"></span>Surat Keterangan Sehat dari Dokter/Klinik/Puskesmas/Rumah Sakit.</div>
+            <div class="doc-item"><span class="chk"></span>Fotokopi Ijazah pendidikan terakhir yang dilegalisir oleh pejabat yang berwenang.</div>
+            <div class="doc-item"><span class="chk"></span>Pas foto formal terbaru dicetak berwarna, background merah/biru, ukuran 4x6 cm sebanyak 3 (tiga) lembar.</div>
+          </div>
+        </div>
+
+        <div class="doc-group onsite">
+          <span class="tag">Diisi di lokasi &middot; disediakan panitia</span>
+          <div class="doc-list glass">
+            <div class="doc-item"><span class="chk"></span>Formulir Pendaftaran.</div>
           </div>
         </div>
 
         <div class="doc-group provided">
-          <span class="tag">Disediakan panitia &middot; tinggal dilengkapi &amp; tanda tangan di lokasi</span>
+          <span class="tag">Disediakan panitia &middot; tinggal dilengkapi &amp; tanda tangan di atas materai saat mendaftar.</span>
           <div class="doc-list glass">
-            <div class="doc-item"><span class="chk"></span>Surat pernyataan bertakwa kepada Tuhan Yang Maha Esa, setia kepada Pancasila, UUD 1945, dan NKRI, serta tidak pernah dijatuhi pidana, bermaterai cukup.</div>
-            <div class="doc-item"><span class="chk"></span>Surat pernyataan bersedia dicalonkan menjadi Staf Desa, bermaterai cukup.</div>
+            <div class="doc-item"><span class="chk"></span>Surat pernyataan bertakwa kepada Tuhan Yang Maha Esa, setia kepada Pancasila, UUD 1945, dan NKRI, bermaterai cukup.</div>
+            <div class="doc-item"><span class="chk"></span>Surat pernyataan bersedia dicalonkan menjadi Staf Desa dan tidak berkedudukan sebagai perangkat desa lain, PNS, TNI, Polri, atau jabatan lain yang dilarang oleh peraturan perundang-undangan, bermaterai cukup.</div>
           </div>
         </div>
         <p class="note-inline">Seluruh berkas dimasukkan ke dalam amplop tertutup dan diserahkan langsung oleh pelamar.</p>
@@ -395,19 +415,19 @@
 
       <div class="loc-card glass reveal">
         <div class="loc-row">
-          <span class="ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.5 7-11.5A7 7 0 105 9.5C5 14.5 12 21 12 21z" stroke="#F4F8EF" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.4" stroke="#F4F8EF" stroke-width="1.8"/></svg></span>
+          <span class="ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.5 7-11.5A7 7 0 105 9.5C5 14.5 12 21 12 21z" stroke="#16281B" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.4" stroke="#16281B" stroke-width="1.8"/></svg></span>
           <div class="txt"><b>Alamat</b>Kantor Desa Lestari, Jl. Raya PG Lestari No. 102, Desa Lestari, Kecamatan Patianrowo, Kabupaten Nganjuk.</div>
         </div>
         <div class="loc-row">
-          <span class="ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="#F4F8EF" stroke-width="1.8"/><path d="M12 7.5V12l3 2" stroke="#F4F8EF" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span class="ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="#16281B" stroke-width="1.8"/><path d="M12 7.5V12l3 2" stroke="#16281B" stroke-width="1.8" stroke-linecap="round"/></svg></span>
           <div class="txt"><b>Jam penerimaan berkas</b>09.00 &ndash; 14.00 WIB, Senin &ndash; Jumat (13&ndash;17 Juli 2026).</div>
         </div>
         <div class="loc-row">
-          <span class="ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="5.5" width="17" height="13" rx="2" stroke="#F4F8EF" stroke-width="1.8"/><path d="M4 7l8 6 8-6" stroke="#F4F8EF" stroke-width="1.8"/></svg></span>
+          <span class="ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="5.5" width="17" height="13" rx="2" stroke="#16281B" stroke-width="1.8"/><path d="M4 7l8 6 8-6" stroke="#16281B" stroke-width="1.8"/></svg></span>
           <div class="txt"><b>Cara penyerahan</b>Berkas dalam amplop tertutup, diserahkan langsung oleh pelamar &mdash; tidak dapat diwakilkan.</div>
         </div>
         <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Pendopo+dan+Kantor+Desa+Lestari" target="_blank" rel="noopener">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.5 7-11.5A7 7 0 105 9.5C5 14.5 12 21 12 21z" stroke="#0A1712" stroke-width="2"/><circle cx="12" cy="9.5" r="2.2" stroke="#0A1712" stroke-width="2"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.5 7-11.5A7 7 0 105 9.5C5 14.5 12 21 12 21z" stroke="#fff" stroke-width="2"/><circle cx="12" cy="9.5" r="2.2" stroke="#fff" stroke-width="2"/></svg>
           Buka lokasi di Google Maps
         </a>
       </div>
@@ -423,7 +443,7 @@
       </div>
 
       <div class="timeline reveal">
-        <div class="t-item"><div class="d">9 Juli 2026</div><div class="t">Pengumuman penerimaan Staf Desa</div></div>
+        <div class="t-item"><div class="d">11 Juli 2026</div><div class="t">Pengumuman penerimaan Staf Desa</div></div>
         <div class="t-item"><div class="d">13&ndash;17 Juli 2026</div><div class="t">Pendaftaran &amp; penerimaan berkas</div></div>
         <div class="t-item"><div class="d">17&ndash;19 Juli 2026</div><div class="t">Verifikasi berkas administrasi</div></div>
         <div class="t-item"><div class="d">20 Juli 2026</div><div class="t">Pengumuman hasil verifikasi administrasi</div></div>
@@ -432,7 +452,7 @@
       </div>
 
       <div class="schedule-note glass reveal">
-        Peserta wajib hadir pukul <b style="color:#fff">08.30 WIB</b>. Seluruh tahapan tes dan pengumuman hasil akhir dilaksanakan dalam satu hari yang sama. Jadwal rinci per sesi akan disampaikan panitia pada hari pelaksanaan.
+        Peserta wajib hadir pukul <b style="color:var(--green-900)">08.30 WIB</b>. Seluruh tahapan tes dan pengumuman hasil akhir dilaksanakan dalam satu hari yang sama. Jadwal rinci per sesi akan disampaikan panitia pada hari pelaksanaan.
       </div>
     </div>
   </section>
@@ -459,9 +479,15 @@
         <div class="subject-list">
           <span>Pancasila &amp; UUD 1945</span>
           <span>Bahasa Indonesia</span>
-          <span>Pengetahuan agama</span>
+          <span>Pengetahuan Agama</span>
           <span>Matematika</span>
-          <span>Pemerintahan desa &amp; daerah</span>
+          <span>Pemerintahan Desa &amp; Daerah</span>
+        </div>
+
+        <p class="section-sub" style="margin-top:18px; margin-bottom:10px;">Diujikan pada tes praktik komputer:</p>
+        <div class="app-pill-list">
+          <span class="app-pill word"><span class="app-ico">W</span>Microsoft Word</span>
+          <span class="app-pill excel"><span class="app-ico">X</span>Microsoft Excel</span>
         </div>
       </div>
     </div>
@@ -497,7 +523,8 @@
         <div class="free-icon">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 5-3.1 8.4-7 10-3.9-1.6-7-5-7-10V6l7-3z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-        <h2>100% tanpa biaya</h2>
+        <span class="tag-gratis">Gratis</span>
+        <h2>100% tanpa biaya pendaftaran</h2>
         <p>Pendaftaran dan seluruh proses seleksi Staf Desa Lestari <b>tidak dipungut biaya apapun.</b></p>
       </div>
     </div>
@@ -507,7 +534,7 @@
 
 <footer>
   <div class="wrap">
-    <p>Panitia Seleksi Staf Desa Lestari</p>
+    <p>Panitia Seleksi Calon Staf Desa Lestari</p>
     <p>Kecamatan Patianrowo &middot; Kabupaten Nganjuk</p>
   </div>
 </footer>
