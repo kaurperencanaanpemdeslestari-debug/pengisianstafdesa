@@ -203,6 +203,14 @@
   .t-item.final::before{border-color:var(--amber); box-shadow:0 0 0 3px rgba(217,165,75,0.18);}
   .t-item .d{font-size:12px; font-weight:700; color:#B27A1E; margin-bottom:2px;}
   .t-item .t{font-size:14px; font-weight:600; color:var(--green-900);}
+  .t-link{
+    display:inline-flex; align-items:center; gap:5px; margin-top:7px;
+    font-size:11.5px; font-weight:600; color:var(--green-700);
+    background:rgba(47,122,84,0.1); border:1px solid rgba(47,122,84,0.28);
+    padding:5px 12px; border-radius:100px; text-decoration:none;
+    transition:transform .2s ease, background .2s ease;
+  }
+  .t-link:hover{transform:translateX(2px); background:rgba(47,122,84,0.18);}
   .schedule-note{margin-top:18px; padding:15px 17px; font-size:12.5px; color:var(--ink-soft);}
 
   /* penilaian */
@@ -445,7 +453,14 @@
         <div class="t-item"><div class="d">12 Juli 2026</div><div class="t">Pengumuman penerimaan Staf Desa</div></div>
         <div class="t-item"><div class="d">13&ndash;17 Juli 2026</div><div class="t">Pendaftaran &amp; penerimaan berkas</div></div>
         <div class="t-item"><div class="d">17&ndash;19 Juli 2026</div><div class="t">Verifikasi berkas administrasi</div></div>
-        <div class="t-item"><div class="d">20 Juli 2026</div><div class="t">Pengumuman hasil verifikasi administrasi</div></div>
+        <div class="t-item">
+          <div class="d">20 Juli 2026</div>
+          <div class="t">Pengumuman hasil verifikasi administrasi</div>
+          <a class="t-link" id="pengumumanLink" href="pengumuman-verifikasi.html" style="display:none;">
+            Lihat pengumuman
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
         <div class="t-item"><div class="d">21 Juli 2026</div><div class="t">Ujian tertulis, tes praktik komputer, dan wawancara</div></div>
         <div class="t-item final"><div class="d">21 Juli 2026</div><div class="t">Pengumuman hasil akhir</div></div>
       </div>
@@ -592,6 +607,16 @@
         ticking = true;
       }
     }, {passive:true});
+  })();
+
+  // tampilkan link "Lihat pengumuman" hanya setelah tanggal pengumuman tiba
+  (function(){
+    var tanggalPengumuman = new Date("2026-07-20T00:00:00+07:00").getTime();
+    var now = new Date().getTime();
+    var link = document.getElementById('pengumumanLink');
+    if(link && now >= tanggalPengumuman){
+      link.style.display = 'inline-flex';
+    }
   })();
 </script>
 
