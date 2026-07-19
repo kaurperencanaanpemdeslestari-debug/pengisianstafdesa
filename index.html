@@ -462,7 +462,14 @@
           </a>
         </div>
         <div class="t-item"><div class="d">21 Juli 2026</div><div class="t">Ujian tertulis, tes praktik komputer, dan wawancara</div></div>
-        <div class="t-item final"><div class="d">21 Juli 2026</div><div class="t">Pengumuman hasil akhir</div></div>
+        <div class="t-item final">
+          <div class="d">21 Juli 2026</div>
+          <div class="t">Pengumuman hasil akhir</div>
+          <a class="t-link" id="pengumumanHasilAkhirLink" href="pengumuman-hasil-akhir.html" style="display:none;">
+            Lihat pengumuman
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
       </div>
 
       <div class="schedule-note glass reveal">
@@ -611,11 +618,18 @@
 
   // tampilkan link "Lihat pengumuman" hanya setelah tanggal pengumuman tiba
   (function(){
-    var tanggalPengumuman = new Date("2026-07-20T00:00:00+07:00").getTime();
     var now = new Date().getTime();
-    var link = document.getElementById('pengumumanLink');
-    if(link && now >= tanggalPengumuman){
-      link.style.display = 'inline-flex';
+
+    var tanggalVerifikasi = new Date("2026-07-20T00:00:00+07:00").getTime();
+    var linkVerifikasi = document.getElementById('pengumumanLink');
+    if(linkVerifikasi && now >= tanggalVerifikasi){
+      linkVerifikasi.style.display = 'inline-flex';
+    }
+
+    var tanggalHasilAkhir = new Date("2026-07-21T14:00:00+07:00").getTime();
+    var linkHasilAkhir = document.getElementById('pengumumanHasilAkhirLink');
+    if(linkHasilAkhir && now >= tanggalHasilAkhir){
+      linkHasilAkhir.style.display = 'inline-flex';
     }
   })();
 </script>
