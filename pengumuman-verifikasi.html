@@ -100,6 +100,12 @@
     margin:0 0 14px; color:var(--green-900);
   }
   .hero p.lede{font-size:14.5px; color:var(--ink-soft); max-width:46ch; margin:0 0 20px;}
+  .transparency-note{
+    display:inline-flex; align-items:center; gap:7px; margin-bottom:8px;
+    font-size:12px; font-weight:600; color:var(--green-700);
+    background:rgba(47,122,84,0.1); border:1px solid rgba(47,122,84,0.25);
+    padding:7px 13px; border-radius:100px;
+  }
 
   .glass{
     background:var(--glass);
@@ -154,6 +160,24 @@
   .next-step{margin-top:18px; padding:16px 18px; font-size:13px; color:var(--ink-soft);}
   .next-step b{color:var(--green-900);}
 
+  .rules-card{padding:20px 22px; margin-top:16px;}
+  .rules-card h3{
+    font-family:var(--font-display); font-weight:600; font-size:16px; color:var(--green-900);
+    margin:0 0 6px; display:flex; align-items:center; gap:8px;
+  }
+  .rules-card .intro{font-size:13px; color:var(--ink-soft); margin:0 0 12px;}
+  .rules-list{margin:0; padding:0; list-style:none;}
+  .rules-list li{
+    font-size:13px; color:var(--ink); padding:9px 0 9px 26px; position:relative;
+    border-top:1px solid var(--glass-border);
+  }
+  .rules-list li:first-child{border-top:none;}
+  .rules-list li .letter{position:absolute; left:0; top:9px; font-weight:700; color:var(--green-700); font-size:12.5px;}
+  .rules-warning{
+    margin-top:14px; padding:12px 15px; font-size:12.5px; font-weight:600; color:#B23A2E;
+    background:rgba(178,58,46,0.08); border:1px solid rgba(178,58,46,0.25); border-radius:10px;
+  }
+
   .empty-state{padding:30px 20px; text-align:center; font-size:13.5px; color:var(--ink-mute);}
 
   /* kontak */
@@ -198,6 +222,10 @@
     <p class="eyebrow">Pengumuman panitia seleksi</p>
     <h1>Hasil Verifikasi Berkas Administrasi</h1>
     <p class="lede">Daftar peserta yang dinyatakan <b>lolos verifikasi berkas administrasi</b> dan berhak melanjutkan ke tahap ujian tertulis, tes praktik komputer, dan wawancara.</p>
+    <div class="transparency-note">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/></svg>
+      Hasil ini bersifat terbuka &amp; dapat diperiksa oleh siapa saja, kapan saja.
+    </div>
   </div>
 </header>
 
@@ -271,7 +299,7 @@
   //    dan tanpa upload ulang.
   // =====================================================================
 
-  const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRMJPXuJUjxyZ3Bc8FzfoIJocI3p2LmfO1JVe-qJ6ZOk-gvM3s011K4_5wscqQJRXZxNxEDWB2G3kxM/pub?output=csv";
+  const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRMJPXuJUjxyZ3Bc8FzfoIJocI3p2LmfO1JVe-qJ6ZOk-gvM3s011K4_5wscqQJRXZxNxEDWB2G3kxM/pub?gid=0&single=true&output=csv";
 
   // =====================================================================
   // JANGAN UBAH BAGIAN DI BAWAH INI
@@ -356,6 +384,22 @@
       </div>
       <div class="glass next-step">
         Peserta yang dinyatakan lolos wajib hadir pada <b>21 Juli 2026, pukul 08.30 WIB</b> di Kantor Desa Lestari untuk mengikuti ujian tertulis, tes praktik komputer, dan wawancara secara berurutan pada hari yang sama.
+      </div>
+      <div class="glass rules-card">
+        <h3>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="#1E5138" stroke-width="1.8"/><path d="M8 8h8M8 12h8M8 16h5" stroke="#1E5138" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Tata Tertib Peserta
+        </h3>
+        <p class="intro">Bagi Bapak/Ibu yang dinyatakan lolos, mohon diperhatikan dan dipatuhi tata tertib berikut selama mengikuti tahapan seleksi selanjutnya:</p>
+        <ul class="rules-list">
+          <li><span class="letter">a.</span>Wajib mengikuti seluruh tahapan seleksi sesuai jadwal yang telah ditentukan.</li>
+          <li><span class="letter">b.</span>Wajib hadir 30 (tiga puluh) menit sebelum pelaksanaan tahapan seleksi dimulai.</li>
+          <li><span class="letter">c.</span>Wajib membawa kartu identitas diri (KTP) dan kartu peserta seleksi.</li>
+          <li><span class="letter">d.</span>Wajib mengenakan pakaian kemeja putih, celana/rok hitam polos, dan bersepatu.</li>
+          <li><span class="letter">e.</span>Dilarang membawa alat komunikasi dan/atau alat elektronik lainnya ke dalam ruang ujian/seleksi.</li>
+          <li><span class="letter">f.</span>Dilarang melakukan kecurangan dalam bentuk apapun.</li>
+        </ul>
+        <div class="rules-warning">Pelanggaran terhadap tata tertib ini dapat mengakibatkan diskualifikasi.</div>
       </div>`;
   }
 
