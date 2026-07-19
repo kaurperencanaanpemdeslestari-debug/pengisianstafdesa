@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pengumuman Hasil Akhir - Staf Desa Lestari</title>
+<meta name="description" content="Pengumuman hasil akhir seleksi Staf Desa Lestari, Kecamatan Patianrowo, Kabupaten Nganjuk.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green-900:#16281B;
+    --green-700:#1E5138;
+    --green-500:#2F7A54;
+    --teal:#2F7A54;
+    --coral:#6B7A94;
+    --amber:#D9A54B;
+
+    --bg-deep:#F3F1EC;
+
+    --glass:rgba(255,255,255,0.55);
+    --glass-strong:rgba(255,255,255,0.82);
+    --glass-border:rgba(22,26,20,0.09);
+    --glass-border-strong:rgba(22,26,20,0.18);
+
+    --ink:#1B1F19;
+    --ink-soft:rgba(27,31,25,0.68);
+    --ink-mute:rgba(27,31,25,0.48);
+
+    --font-display:'Fraunces', serif;
+    --font-body:'Plus Jakarta Sans', sans-serif;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg-deep);
+    color:var(--ink);
+    font-family:var(--font-body);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+  .wrap{max-width:640px; margin:0 auto; padding:0 20px;}
+
+  .bg-blobs{position:fixed; inset:0; z-index:-1; overflow:hidden; background:
+    linear-gradient(160deg, #838DA0 0%, #ADB4C1 22%, #DEE0E4 48%, #F7F6F3 72%, #FFFFFF 100%);
+  }
+  .blob{position:absolute; border-radius:50%; filter:blur(100px); opacity:.4; will-change:transform;}
+  .blob-1{width:480px; height:480px; background:#BFE0CC; top:-140px; left:-120px; animation:float1 26s ease-in-out infinite alternate;}
+  .blob-2{width:420px; height:420px; background:#E8D3A3; bottom:-120px; right:-100px; animation:float2 30s ease-in-out infinite alternate;}
+  .blob-3{width:360px; height:360px; background:#C7D2E0; top:38%; left:58%; animation:float3 22s ease-in-out infinite alternate;}
+  @keyframes float1{ from{transform:translate(0,0) scale(1);} to{transform:translate(70px,50px) scale(1.12);} }
+  @keyframes float2{ from{transform:translate(0,0) scale(1);} to{transform:translate(-60px,-40px) scale(1.08);} }
+  @keyframes float3{ from{transform:translate(0,0) scale(1);} to{transform:translate(-50px,60px) scale(0.94);} }
+
+  .grain{position:fixed; inset:0; z-index:-1; opacity:.02; pointer-events:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .topbar{
+    position:sticky; top:0; z-index:40;
+    background:rgba(255,255,255,0.6);
+    backdrop-filter:blur(16px) saturate(160%);
+    -webkit-backdrop-filter:blur(16px) saturate(160%);
+    border-bottom:1px solid var(--glass-border);
+    padding:10px 0;
+    font-size:12.5px;
+  }
+  .topbar .wrap{display:flex; align-items:center; justify-content:space-between; gap:10px;}
+  .topbar-left{display:flex; align-items:center; gap:10px;}
+  .emblem{
+    width:28px; height:28px; flex-shrink:0; border-radius:50%;
+    background:var(--glass-strong); border:1px solid var(--glass-border-strong);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .topbar-text{color:var(--ink-soft);}
+  .topbar-text b{color:var(--ink); font-weight:600;}
+  .back-link{
+    display:inline-flex; align-items:center; gap:5px; text-decoration:none;
+    font-size:12px; font-weight:600; color:var(--green-700);
+    background:rgba(47,122,84,0.1); border:1px solid rgba(47,122,84,0.25);
+    padding:6px 12px; border-radius:100px; flex-shrink:0;
+    transition:background .2s ease;
+  }
+  .back-link:hover{background:rgba(47,122,84,0.18);}
+
+  .hero{padding:44px 0 8px; position:relative;}
+  .eyebrow{
+    font-size:12px; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--teal); margin:0 0 14px; display:flex; align-items:center; gap:8px;
+  }
+  .eyebrow::before{content:""; width:16px; height:1px; background:var(--teal); display:inline-block;}
+  .hero h1{
+    font-family:var(--font-display); font-weight:600;
+    font-size:clamp(26px, 6.5vw, 36px); line-height:1.16;
+    margin:0 0 14px; color:var(--green-900);
+  }
+  .hero p.lede{font-size:14.5px; color:var(--ink-soft); max-width:46ch; margin:0 0 20px;}
+  .transparency-note{
+    display:inline-flex; align-items:center; gap:7px; margin-bottom:8px;
+    font-size:12px; font-weight:600; color:var(--green-700);
+    background:rgba(47,122,84,0.1); border:1px solid rgba(47,122,84,0.25);
+    padding:7px 13px; border-radius:100px;
+  }
+
+  .glass{
+    background:var(--glass);
+    backdrop-filter:blur(18px) saturate(160%);
+    -webkit-backdrop-filter:blur(18px) saturate(160%);
+    border:1px solid var(--glass-border);
+    border-radius:18px;
+    box-shadow:0 16px 40px -24px rgba(20,25,20,0.28);
+  }
+
+  section.block{padding:30px 0 6px;}
+  .section-num{font-size:11.5px; font-weight:700; color:var(--amber); letter-spacing:.1em; text-transform:uppercase; margin:0 0 6px;}
+  .section-head h2{font-family:var(--font-display); font-weight:600; font-size:20px; color:var(--green-900); margin:0;}
+
+  /* ---------- status: belum diumumkan ---------- */
+  .pending-card{padding:36px 26px; text-align:center;}
+  .pending-icon{
+    width:56px; height:56px; border-radius:50%; margin:0 auto 16px;
+    background:rgba(217,165,75,0.14); border:1px solid rgba(217,165,75,0.35);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .pending-card h2{font-family:var(--font-display); font-weight:600; font-size:20px; color:var(--green-900); margin:0 0 8px;}
+  .pending-card p{font-size:13.5px; color:var(--ink-soft); max-width:38ch; margin:0 auto 4px;}
+  .pending-date{
+    display:inline-block; margin-top:14px; font-size:13px; font-weight:700; color:#B27A1E;
+    background:rgba(217,165,75,0.12); border:1px solid rgba(217,165,75,0.32);
+    padding:8px 16px; border-radius:100px;
+  }
+
+  /* ---------- status: sudah diumumkan ---------- */
+  .result-summary{
+    display:flex; align-items:center; gap:14px; padding:18px 20px; margin-bottom:16px;
+  }
+  .result-summary .num{font-family:var(--font-display); font-size:30px; font-weight:600; color:var(--green-700); line-height:1;}
+  .result-summary .txt{font-size:13px; color:var(--ink-soft);}
+  .result-summary .txt b{color:var(--green-900);}
+
+  .table-wrap{overflow-x:auto;}
+  .result-table{width:100%; border-collapse:collapse; font-size:13.5px;}
+  .result-table thead th{
+    text-align:left; background:var(--green-700); color:#fff;
+    padding:11px 16px; font-size:10.5px; text-transform:uppercase; letter-spacing:.05em;
+    white-space:nowrap;
+  }
+  .result-table thead th.col-nomor{width:100px;}
+  .result-table thead th.col-nilai{width:90px;}
+  .result-table tbody td{padding:11px 16px; border-top:1px solid var(--glass-border); color:var(--ink);}
+  .result-table tbody tr:first-child td{border-top:none;}
+  .result-table tbody tr:hover td{background:rgba(47,122,84,0.06);}
+  .result-table td.nomor{font-weight:700; color:var(--green-700); font-variant-numeric:tabular-nums;}
+  .result-table td.nama{font-weight:600; color:var(--green-900);}
+  .result-table td.nilai{font-variant-numeric:tabular-nums; font-weight:600;}
+  .result-table td.ket{font-size:12.5px;}
+  .ket-badge{
+    display:inline-block; font-size:10.5px; font-weight:700; padding:3px 10px;
+    border-radius:100px; background:rgba(217,165,75,0.16); color:#B27A1E;
+    white-space:nowrap;
+  }
+
+  .next-step{margin-top:18px; padding:16px 18px; font-size:13px; color:var(--ink-soft);}
+  .next-step b{color:var(--green-900);}
+
+  .empty-state{padding:30px 20px; text-align:center; font-size:13.5px; color:var(--ink-mute);}
+
+  /* kontak */
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:8px;}
+  .contact-card{padding:15px; text-decoration:none; color:var(--ink); display:flex; flex-direction:column; gap:8px;}
+  .contact-card .wa-ico{width:30px; height:30px; border-radius:9px; background:#25D366; display:flex; align-items:center; justify-content:center;}
+  .contact-card .name{font-size:13px; font-weight:600; color:var(--green-900);}
+  .contact-card .num{font-size:11.5px; color:var(--ink-mute);}
+
+  footer{margin-top:40px; padding:24px 0 34px; text-align:center; border-top:1px solid var(--glass-border);}
+  footer p{font-size:11.5px; color:var(--ink-mute); margin:4px 0;}
+
+  svg{display:block;}
+</style>
+</head>
+<body>
+
+<div class="bg-blobs" aria-hidden="true">
+  <span class="blob blob-1"></span>
+  <span class="blob blob-2"></span>
+  <span class="blob blob-3"></span>
+</div>
+<div class="grain"></div>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar-left">
+      <div class="emblem" aria-hidden="true">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M12 2L4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6l-8-4z" stroke="#16281B" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="topbar-text"><b>Desa Lestari</b></div>
+    </div>
+    <a class="back-link" href="index.html">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Halaman Utama
+    </a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Pengumuman panitia seleksi</p>
+    <h1>Hasil Akhir Seleksi Staf Desa Lestari</h1>
+    <p class="lede">Nilai akhir dan hasil keputusan seleksi Staf Desa Lestari, berdasarkan gabungan hasil ujian tertulis, tes praktik komputer, dan wawancara.</p>
+    <div class="transparency-note">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/></svg>
+      Hasil ini bersifat terbuka &amp; dapat diperiksa oleh siapa saja, kapan saja.
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="block">
+    <div class="wrap" id="hasil-container">
+      <div class="glass empty-state">Memuat data pengumuman&hellip;</div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="section-head" style="margin-bottom:14px;">
+        <p class="section-num">Bantuan</p>
+        <h2>Ada pertanyaan?</h2>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-card glass" href="https://wa.me/6287830725557?text=Halo%2C%20saya%20ingin%20bertanya%20soal%20hasil%20akhir%20seleksi%20Staf%20Desa%20Lestari." target="_blank" rel="noopener">
+          <span class="wa-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 00-7.8 13.5L3 21l4.6-1.2A9 9 0 1012 3z" stroke="#fff" stroke-width="1.6"/><path d="M8.5 8.7c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .5.4.2.5.6 1.5.6 1.6.1.1.1.3 0 .4-.1.2-.2.3-.3.4-.1.2-.3.3-.1.6.2.4.9 1.4 1.9 2.2 1.3 1.1 2.2 1.3 2.5 1.3.2.1.4 0 .5-.1.2-.2.6-.7.8-1 .2-.2.3-.2.5-.1.2.1 1.5.7 1.7.8.2.1.3.2.4.3 0 .2 0 .9-.3 1.3-.4.5-1.3.9-1.7.9-.5.1-1.1.1-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9 0-1.3.7-2 1-2.3z" stroke="#fff" stroke-width="1.2" fill="#fff"/></svg></span>
+          <span class="name">Pak Bima</span>
+          <span class="num">0878-3072-5557</span>
+        </a>
+        <a class="contact-card glass" href="https://wa.me/6285733662297?text=Halo%2C%20saya%20ingin%20bertanya%20soal%20hasil%20akhir%20seleksi%20Staf%20Desa%20Lestari." target="_blank" rel="noopener">
+          <span class="wa-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 00-7.8 13.5L3 21l4.6-1.2A9 9 0 1012 3z" stroke="#fff" stroke-width="1.6"/><path d="M8.5 8.7c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .5.4.2.5.6 1.5.6 1.6.1.1.1.3 0 .4-.1.2-.2.3-.3.4-.1.2-.3.3-.1.6.2.4.9 1.4 1.9 2.2 1.3 1.1 2.2 1.3 2.5 1.3.2.1.4 0 .5-.1.2-.2.6-.7.8-1 .2-.2.3-.2.5-.1.2.1 1.5.7 1.7.8.2.1.3.2.4.3 0 .2 0 .9-.3 1.3-.4.5-1.3.9-1.7.9-.5.1-1.1.1-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9 0-1.3.7-2 1-2.3z" stroke="#fff" stroke-width="1.2" fill="#fff"/></svg></span>
+          <span class="name">Pak Huda</span>
+          <span class="num">0857-3366-2297</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Panitia Seleksi Staf Desa Lestari</p>
+    <p>Kecamatan Patianrowo &middot; Kabupaten Nganjuk</p>
+  </div>
+</footer>
+
+<script>
+  // =====================================================================
+  // PANITIA: SETUP SEKALI SAJA, SETELAH ITU TIDAK PERLU SENTUH FILE INI LAGI
+  // =====================================================================
+  //
+  // Sama seperti halaman pengumuman verifikasi berkas: isi pengumuman
+  // (status & data nilai) TIDAK diedit di file ini, tapi cukup lewat
+  // Google Sheets dari HP kamu kapan saja.
+  //
+  // LANGKAH SETUP (hanya dilakukan SEKALI):
+  //
+  // 1. Buat 1 Google Sheet BARU (terpisah dari sheet verifikasi berkas),
+  //    isi persis seperti ini (baris & kolom harus sama persis):
+  //
+  //      A1: Status Pengumuman   B1: belum
+  //      A2: (boleh dikosongkan)
+  //      A3: Nomor Peserta   B3: Nama Lengkap   C3: Nilai Akhir   D3: Keterangan
+  //      A4: 001             B4: Nama Peserta 1  C4: 87.5          D4: Diterima
+  //      A5: 002             B5: Nama Peserta 2  C5: 81.0          D5: (boleh dikosongkan)
+  //      ... (lanjutkan ke bawah sesuai jumlah peserta)
+  //
+  //    Kolom "Keterangan" bebas kamu isi sendiri sesuai kebutuhan, misalnya
+  //    "Diterima" untuk peringkat 1, atau dikosongkan untuk peserta lain.
+  //
+  // 2. Di Google Sheets: File > Share > Publish to web
+  //    - Pilih sheet yang tadi dibuat, format "Comma-separated values (.csv)"
+  //    - Klik Publish, salin link yang muncul
+  //    - Pastikan centang "Automatically republish when changes are made" aktif
+  //
+  // 3. Tempel link tersebut menggantikan tulisan di bawah ini (SHEET_CSV_URL),
+  //    di antara tanda kutip. Simpan file ini, upload SEKALI ke hosting.
+  //
+  // Setelah langkah di atas selesai, SETERUSNYA kamu hanya perlu:
+  //    - Ganti sel B1 jadi "sudah" saat hasil siap diumumkan
+  //    - Isi nomor, nama, nilai akhir, dan keterangan di baris-baris bawahnya
+  //    Halaman ini otomatis menampilkan perubahan itu, tanpa edit kode
+  //    dan tanpa upload ulang.
+  // =====================================================================
+
+  const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKI24403d-zM9okBx4PLCP4Q2JI3S9IS0Sc0uwGWCLqm8EK1UA20lLJ0SlXBGZ7rSVfARb5F_RisWg/pub?gid=0&single=true&output=csv";
+
+  // =====================================================================
+  // JANGAN UBAH BAGIAN DI BAWAH INI
+  // =====================================================================
+
+  function escapeHtml(str){
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function parseCSV(text){
+    const rows = [];
+    let row = [], field = '', inQuotes = false;
+    for(let i = 0; i < text.length; i++){
+      const c = text[i], next = text[i+1];
+      if(inQuotes){
+        if(c === '"' && next === '"'){ field += '"'; i++; }
+        else if(c === '"'){ inQuotes = false; }
+        else{ field += c; }
+      } else {
+        if(c === '"') inQuotes = true;
+        else if(c === ','){ row.push(field); field = ''; }
+        else if(c === '\r'){ /* skip */ }
+        else if(c === '\n'){ row.push(field); rows.push(row); row = []; field = ''; }
+        else field += c;
+      }
+    }
+    if(field.length || row.length){ row.push(field); rows.push(row); }
+    return rows;
+  }
+
+  function renderPending(){
+    document.getElementById('hasil-container').innerHTML = `
+      <div class="glass pending-card">
+        <div class="pending-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="#B27A1E" stroke-width="1.8"/><path d="M12 7.5V12l3 2" stroke="#B27A1E" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h2>Pengumuman Belum Tersedia</h2>
+        <p>Hasil akhir seleksi masih dalam proses rekapitulasi oleh Panitia Seleksi.</p>
+        <div class="pending-date">Diumumkan 21 Juli 2026</div>
+      </div>`;
+  }
+
+  function renderError(){
+    document.getElementById('hasil-container').innerHTML = `
+      <div class="glass pending-card">
+        <div class="pending-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 9v4M12 16.5h.01" stroke="#B27A1E" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="8.5" stroke="#B27A1E" stroke-width="1.8"/></svg>
+        </div>
+        <h2>Data Belum Bisa Dimuat</h2>
+        <p>Halaman gagal mengambil data pengumuman. Coba muat ulang halaman, atau hubungi panitia lewat WhatsApp di bawah.</p>
+      </div>`;
+  }
+
+  function renderEmpty(){
+    document.getElementById('hasil-container').innerHTML = `
+      <div class="glass empty-state">Belum ada data yang ditambahkan ke daftar pengumuman.</div>`;
+  }
+
+  function renderTable(dataRows){
+    const rows = dataRows.map((r) => {
+      const ket = (r[3] || '').trim();
+      return `
+      <tr>
+        <td class="nomor">${escapeHtml(r[0] || '')}</td>
+        <td class="nama">${escapeHtml(r[1] || '')}</td>
+        <td class="nilai">${escapeHtml(r[2] || '')}</td>
+        <td class="ket">${ket ? `<span class="ket-badge">${escapeHtml(ket)}</span>` : ''}</td>
+      </tr>`;
+    }).join('');
+
+    document.getElementById('hasil-container').innerHTML = `
+      <div class="glass result-summary">
+        <div class="num">${dataRows.length}</div>
+        <div class="txt"><b>${dataRows.length} peserta</b> tercatat dalam rekapitulasi nilai akhir seleksi Staf Desa Lestari.</div>
+      </div>
+      <div class="glass table-wrap">
+        <table class="result-table">
+          <thead>
+            <tr><th class="col-nomor">No. Peserta</th><th>Nama Lengkap</th><th class="col-nilai">Nilai Akhir</th><th>Keterangan</th></tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+      <div class="glass next-step">
+        Nilai akhir merupakan gabungan dari <b>Ujian Tertulis (50%)</b>, <b>Tes Praktik Komputer (30%)</b>, dan <b>Wawancara (20%)</b>, sesuai sistem penilaian yang telah diumumkan sebelumnya. Keputusan Panitia Seleksi bersifat final.
+      </div>`;
+  }
+
+  async function loadData(){
+    if(!SHEET_CSV_URL || SHEET_CSV_URL.indexOf("TEMPEL_LINK") !== -1){
+      renderPending();
+      return;
+    }
+    try{
+      const bust = (SHEET_CSV_URL.indexOf('?') > -1 ? '&' : '?') + 'cb=' + Date.now();
+      const res = await fetch(SHEET_CSV_URL + bust);
+      if(!res.ok) throw new Error('Gagal mengambil data (' + res.status + ')');
+      const text = await res.text();
+      const allRows = parseCSV(text);
+
+      const norm = (v) => String(v || '').trim().toLowerCase();
+
+      const statusRow = allRows.find(r => norm(r[0]) === 'status pengumuman');
+      const status = norm(statusRow ? statusRow[1] : '');
+
+      if(status !== 'sudah'){
+        renderPending();
+        return;
+      }
+
+      const headerIdx = allRows.findIndex(r => norm(r[0]) === 'nomor peserta');
+      const dataRows = headerIdx === -1
+        ? []
+        : allRows.slice(headerIdx + 1).filter(r => r[0] && String(r[0]).trim() !== '');
+
+      if(dataRows.length === 0){
+        renderEmpty();
+        return;
+      }
+
+      renderTable(dataRows);
+    } catch(err){
+      renderError();
+    }
+  }
+
+  loadData();
+</script>
+
+</body>
+</html>
